@@ -9,6 +9,40 @@
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" async></script>
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+
+  <script>
+
+  const VewWorkHandler = (e) => {
+    $(document).ready(()=>{
+    document.getElementById("updateWG").style.display = "grid";
+
+                $(`
+                  <li><img src="Assets/GalleryImages/photo1.png" alt="" /></li>
+                  <li><img src="Assets/GalleryImages/photo2.png" alt="" /></li>
+                  <li><img src="Assets/GalleryImages/photo3.png" alt="" /></li>
+                  <li><img src="Assets/GalleryImages/photo4.png" alt="" /></li>
+                  <li><img src="Assets/GalleryImages/photo5.png" alt="" /></li>
+                  <li><img src="Assets/GalleryImages/photo6.png" alt="" /></li>
+                  <li><img src="Assets/GalleryImages/photo7.png" alt="" /></li>
+                  <li><img src="Assets/GalleryImages/photo8.png" alt="" /></li>
+                  <li><img src="Assets/GalleryImages/photo9.png" alt="" /></li>
+                  <li><img src="Assets/GalleryImages/photo10.png" alt="" /></li>
+                  <li><img src="Assets/GalleryImages/photo11.png" alt="" /></li>
+                  <li><img src="Assets/GalleryImages/photo12.png" alt="" /></li>
+                  <li><img src="Assets/GalleryImages/photo13.png" alt="" /></li>
+                  <li><img src="Assets/GalleryImages/photo14.png" alt="" /></li>
+                  <li><img src="Assets/GalleryImages/photo15.png" alt="" /></li>
+                  <li><img src="Assets/GalleryImages/photo16.png" alt="" /></li>
+                  <li><img src="Assets/GalleryImages/photo17.png" alt="" /></li>
+                  <li><img src="Assets/GalleryImages/photo18.png" alt="" /></li>
+                  <li><img src="Assets/GalleryImages/photo19.png" alt="" /></li>
+                  <li><img src="Assets/GalleryImages/photo20.png" alt="" /></li>
+                
+                `).prependTo("#WorkGallery")
+    });
+
+  }
+</script>
   
 </head>
 
@@ -132,34 +166,15 @@
     <section class="work-gallery" id="updateWG">
       <h2>Work Images</h2>
       <button onclick="hide_WG()">X</button>
-      <ul>
-        <li><img src="Assets/GalleryImages/photo1.png" alt="" /></li>
-        <li><img src="Assets/GalleryImages/photo2.png" alt="" /></li>
-        <li><img src="Assets/GalleryImages/photo3.png" alt="" /></li>
-        <li><img src="Assets/GalleryImages/photo4.png" alt="" /></li>
-        <li><img src="Assets/GalleryImages/photo5.png" alt="" /></li>
-        <li><img src="Assets/GalleryImages/photo6.png" alt="" /></li>
-        <li><img src="Assets/GalleryImages/photo7.png" alt="" /></li>
-        <li><img src="Assets/GalleryImages/photo8.png" alt="" /></li>
-        <li><img src="Assets/GalleryImages/photo9.png" alt="" /></li>
-        <li><img src="Assets/GalleryImages/photo10.png" alt="" /></li>
-        <li><img src="Assets/GalleryImages/photo11.png" alt="" /></li>
-        <li><img src="Assets/GalleryImages/photo12.png" alt="" /></li>
-        <li><img src="Assets/GalleryImages/photo13.png" alt="" /></li>
-        <li><img src="Assets/GalleryImages/photo14.png" alt="" /></li>
-        <li><img src="Assets/GalleryImages/photo15.png" alt="" /></li>
-        <li><img src="Assets/GalleryImages/photo16.png" alt="" /></li>
-        <li><img src="Assets/GalleryImages/photo17.png" alt="" /></li>
-        <li><img src="Assets/GalleryImages/photo18.png" alt="" /></li>
-        <li><img src="Assets/GalleryImages/photo19.png" alt="" /></li>
-        <li><img src="Assets/GalleryImages/photo20.png" alt="" /></li>
+      <ul id="WorkGallery">
+       
       </ul>
     </section>
 
 
     <div class="gallery-container">
       <img src="Assets/galleryColloection.png" alt="" />
-      <button onclick="show_WG()">View Work</button>
+      <button onclick="VewWorkHandler(event)">View Work</button>
     </div>
 
     <div class="socialMedia-container">
