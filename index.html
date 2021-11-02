@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="imgage/png" href="Assets/favIcon1.png" />
+  <title>JR Landscaping</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" async></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+  
+</head>
+
+<body>
+  <header>
+    <h1>Jr Landscaping</h1>
+    <p>
+      We design outdoor living spaces you will enjoy.
+    </p>
+  </header>
+  <main>
+    <div class="background-img-container">
+      <picture>
+        <source media="(min-width: 530px)" srcset="Assets/backgroundTablet.png" />
+        <img src="Assets/backgroundPhone.png" alt="" />
+      </picture>
+    </div>
+
+    <section class="logo-container">
+      <img src="Assets/logo.png" alt="" />
+      <h2>Our Services</h2>
+      <p>We design, Install, and maintain outdoor living spaces.</p>
+    </section>
+
+    <section class="services-container">
+      <div class="services-wrapper">
+        <h2>Design</h2>
+        <button onclick="show_S1()">Design</button>
+
+        <p id="hideS1">We design outdoor living spaces you will enjoy.</p>
+      </div>
+      <div class="services-wrapper">
+        <h2>Installation</h2>
+        <button onclick="show_S2()">Installation</button>
+
+        <p class="hide-text" id="hideS2">
+          We help you pick the best material for your outdoor living space and
+          set an appropriate time for installation.
+        </p>
+      </div>
+      <div class="services-wrapper">
+        <h2>Maintenance</h2>
+        <button onclick="show_S3()">Maintenance</button>
+        <p class="hide-text" id="hideS3">
+          We offer to all our customer's maintenance service to keep your
+          outdoor living area looking clean and new.
+        </p>
+      </div>
+    </section>
+
+    <section class="openMenu" id="openCloseM">
+      <h2>Get a free estimate today.</h2>
+      <ul>
+        <li>
+          <h3>Email us.</h3>
+        </li>
+
+        <li>
+          <a href="mailto:juan.rios@jrprolandscaping.com?subject=Estimate&body=Hello, Juan Rios my name is">
+            <img src="Assets/iconEmail.png" alt="" />
+          </a>
+        </li>
+
+        <li>
+          <h3>Onsite estimate by an appointment.</h3>
+        </li>
+        <li>
+          <a
+            href="mailto:juan.rios@jrprolandscaping.com?subject=Appointment&body=Hello, Juan Rios my name is[]  and I would like to make an appointment">
+            <img src="Assets/iconCalender.png" alt="" />
+          </a>
+        </li>
+        <li>
+          <h3>Drirect Message us.</h3>
+        </li>
+        <li>
+          <a href="sms:(925)642-3543?body=Hello My name is">
+            <img src="Assets/iconDM.png" alt="" />
+          </a>
+        </li>
+        <li>
+          <h3>Over the phone (925)642-3543</h3>
+        </li>
+        <li>
+          <a href="tel:(925)642-3543">
+            <img src="Assets/iconPhone.png" alt="" />
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <nav>
+      <ul>
+        <li>
+          <img class="hideMenuTablet" onclick="open_Menu()" src="Assets/iconMenue.png" alt="" />
+        </li>
+        <li id="hideIconM">
+          <a href="mailto:juan.rios@jrprolandscaping.com?subject=Estimate&body=Hello, Juan Rios my name is">
+            <img src="Assets/iconEmail.png" alt="" />
+          </a>
+        </li>
+        <li id="hideIconC">
+          <a
+            href="mailto:juan.rios@jrprolandscaping.com?subject=Appointment&body=Hello, Juan Rios my name is[]  and I would like to make an appointment">
+            <img src="Assets/iconCalender.png" alt="" />
+          </a>
+        </li>
+        <li id="hideIconDM">
+          <a href="sms:(925)642-3543?body=Hello My name is">
+            <img src="Assets/iconDM.png" alt="" />
+          </a>
+        </li>
+        <li id="hideIconP">
+          <a href="tel:(925)642-3543">
+            <img src="Assets/iconPhone.png" alt="" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="work-gallery" id="updateWG">
+      <h2>Work Images</h2>
+      <button onclick="hide_WG()">X</button>
+      <ul>
+        <li><img src="Assets/GalleryImages/photo1.png" alt="" /></li>
+        <li><img src="Assets/GalleryImages/photo2.png" alt="" /></li>
+        <li><img src="Assets/GalleryImages/photo3.png" alt="" /></li>
+        <li><img src="Assets/GalleryImages/photo4.png" alt="" /></li>
+        <li><img src="Assets/GalleryImages/photo5.png" alt="" /></li>
+        <li><img src="Assets/GalleryImages/photo6.png" alt="" /></li>
+        <li><img src="Assets/GalleryImages/photo7.png" alt="" /></li>
+        <li><img src="Assets/GalleryImages/photo8.png" alt="" /></li>
+        <li><img src="Assets/GalleryImages/photo9.png" alt="" /></li>
+        <li><img src="Assets/GalleryImages/photo10.png" alt="" /></li>
+        <li><img src="Assets/GalleryImages/photo11.png" alt="" /></li>
+        <li><img src="Assets/GalleryImages/photo12.png" alt="" /></li>
+        <li><img src="Assets/GalleryImages/photo13.png" alt="" /></li>
+        <li><img src="Assets/GalleryImages/photo14.png" alt="" /></li>
+        <li><img src="Assets/GalleryImages/photo15.png" alt="" /></li>
+        <li><img src="Assets/GalleryImages/photo16.png" alt="" /></li>
+        <li><img src="Assets/GalleryImages/photo17.png" alt="" /></li>
+        <li><img src="Assets/GalleryImages/photo18.png" alt="" /></li>
+        <li><img src="Assets/GalleryImages/photo19.png" alt="" /></li>
+        <li><img src="Assets/GalleryImages/photo20.png" alt="" /></li>
+      </ul>
+    </section>
+
+
+    <div class="gallery-container">
+      <img src="Assets/galleryColloection.png" alt="" />
+      <button onclick="show_WG()">View Work</button>
+    </div>
+
+    <div class="socialMedia-container">
+      <a href="https://www.yelp.com/writeareview/biz/dQo6kMLxHl2c7V2bKuMe9w?return_url=%2Fbiz%2FdQo6kMLxHl2c7V2bKuMe9w&source=biz_details_war_button"
+        target="blank_">
+        <h2>Write a yelp review.</h2>
+      </a>
+      <a href="https://www.yelp.com/writeareview/biz/dQo6kMLxHl2c7V2bKuMe9w?return_url=%2Fbiz%2FdQo6kMLxHl2c7V2bKuMe9w&source=biz_details_war_button"
+        target="blank_">
+        <img src="Assets/yelpIcon.png" alt="">
+      </a>
+    </div>
+  </main>
+
+  <footer>
+
+  </footer>
+</body>
+
+</html>
